@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shopping List</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">
+	</head>
+
+
+	<body>
+		<div class="content-container to-center">
+			<header class="circle spaced-top-bottom">
+				<p class="title center-text">shopping list</p>
+			</header>
+
+			<section class="instructions spaced-top-bottom">
+				<p class="instruction-text center-text">To add a new item, enter it in the field below and press the add button or the enter key.  Items can be resorted by clicking and dragging.  To check off an item, click the green checkmark.  The item will go into your completed items section.  If you want to restore the item, simply click on it, and it will go back into the todo section.</p>
+			</section>
+
+			<form class="to-center">
+				<input type="text" placeholder="enter an item" required="true" autocomplete="off"/>
+				<button type="submit" class="center-text add">&#43;</button>
+			</form>
+
+			<section id="todo-items" class="spaced-top-bottom">
+				<ul id="shopping-list">
+					<li class="empty">Nothing added yet!</li>
+				</ul>
+			</section>
+			
+			<section id="completed-items" class="spaced-top-bottom">
+				<p>Completed Items</p>
+				<ul id="completed-list">
+				</ul>
+			</section>
+		</div>
+
+		<!-- jQuery -->
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+		<script type="text/javascript" src="scripts/app.js"></script>
+	</body>
+</html>

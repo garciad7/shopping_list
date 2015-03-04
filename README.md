@@ -1,1 +1,4 @@
-# shopping_list
+shopping-list
+===================
+
+Shopping List Project
